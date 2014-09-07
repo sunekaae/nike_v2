@@ -14,9 +14,11 @@ module NikeV2
 
   class Configuration
     attr_accessor :cache
+    attr_accessor :proxy
 
     def initialize
       @cache = false
+      @proxy = false
     end
   end
 end

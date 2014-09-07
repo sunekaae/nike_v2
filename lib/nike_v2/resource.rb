@@ -13,6 +13,10 @@ module NikeV2
       cache NikeV2.configuration.cache
     end
 
+    if NikeV2.configuration.proxy
+      http_proxy NikeV2.configuration.proxy.host, NikeV2.configuration.proxy.port
+    end
+
     def initialize(attributes={})
       super(attributes)
     end
